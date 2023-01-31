@@ -251,7 +251,7 @@ public class Display {
                             System.out.printf("Enter memo: ");
                             String memo = sc.next();
                             theUser.addAcctTransaction(accNum-1, funds.negate(), memo);
-                            theUser.addAcctTransaction(accNum, amount, memo);
+                            theUser.addAcctTransaction(accNum, funds, memo);
                             valid = false;
                             loggedInScreen(theUser);
                         } else {
@@ -268,7 +268,7 @@ public class Display {
                             System.out.printf("Enter memo: ");
                             String memo = sc.next();
                             theUser.addAcctTransaction(accNum-1, funds.negate(), memo);
-                            theUser.addAcctTransaction(accNum-2, amount, memo);
+                            theUser.addAcctTransaction(accNum-2, funds, memo);
                             valid = false;
                             loggedInScreen(theUser);
                         } else {
